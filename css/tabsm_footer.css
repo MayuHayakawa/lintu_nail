@@ -1,0 +1,48 @@
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+■　フッター
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+/* salonName */
+footer {
+    padding-top: 1rem!important;
+}
+
+.footerLogo {
+    width: 100%;
+    text-align: center;
+}
+
+.footerLogo a {
+    margin: 0!important;
+}
+
+.moreBtn {
+    text-align: center;
+    margin-bottom: 1rem!important;
+}
+
+.footerSNS {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.footerSNS li {
+    width: 100%;
+    margin: 0!important;
+    text-align: center;
+}
+
+.HB {
+    margin: 0!important;
+}
+
+/* salonDetail */
+.footerInfo dt {
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.footer_contact {
+    margin: 0!important;
+    text-align: center;
+}

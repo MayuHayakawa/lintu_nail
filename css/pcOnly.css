@@ -1,0 +1,12 @@
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+★　CSS　PCのみの設定　★
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+/* pc以外のものは非表示にする */
+
+.pcOnly {
+	display:inline!important;
+}
+
+.tabsmOnly {
+	display:none!important;
+}

@@ -1,0 +1,13 @@
+/*レイアウト設定用*/
+@import "./base.css";
+
+/*TOPページ設定用*/
+@import "./top.css";
+
+/*レシポンシブ設定用*/
+@import url('./pcOnly.css') screen and (min-width: 770px);/*PC用*//*769px*/
+@import url('./tabsmOnly.css') screen and (max-width: 769px);/*タブレット・スマホ共通*/
+@import url('./pc_menu.css') screen and (min-width: 770px);/*PCメニュー用*//*900px以上で表示*/
+@import url('./tabsm_menu.css') screen and (max-width: 769px);/*SMメニュー用*//*900px未満で表示*/
+@import url('./pc_footer.css') screen and (min-width: 770px);/*SMメニュー用*//*900px未満で表示*/
+@import url('./tabsm_footer.css') screen and (max-width: 769px);/*SMメニュー用*//*900px未満で表示*/

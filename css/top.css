@@ -1,0 +1,253 @@
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+★　CSS　トップページ設定　★
+
+■１．タイトル
+■２-１．トップ用コンテンツ・ラッパー
+■２-２．トップ用コンテンツ枠・メイン
+■２-３．トップ用コンテンツ枠・中央
+■２-４．トップ用コンテンツ枠・右
+■３．トップ用フッター
+
+■４．その他
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+■1．メインイメージ
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+.topImgBox {
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.topImgBox img {
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+}
+
+.topImgBox .fadeout {
+    opacity: 0;
+    transition: 6s ease-in-out;
+}
+
+.topImgBox .fadein {
+    opacity: 1;
+    transition: 6s ease-in-out;
+}
+
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+■3．CONCEPT
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+.topConcept {
+    width: 100%;
+    background: url(/image/contact1.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* @media screen {
+    
+} */
+
+.topConcept .topConceptInner {
+    margin-bottom: 5rem;
+    padding: 2rem 0;
+}
+
+.topConcept .topConceptInner .textBox {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 3rem 2rem;
+    position: relative;
+    margin: 0 auto;
+}
+
+.topConcept .topConceptInner .textBox h2 {
+    font-size: 0.7rem;
+    padding-bottom: 1rem;
+}
+
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+■3．works
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+.worksFav {
+    padding-bottom: 5rem;
+}
+
+.worksFav .titleBox {
+    position: relative;
+    text-align: center;
+}
+
+.worksFav .titleBox .moreBtn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    font-size: 0.7rem;
+}
+
+.worksFav .titleBox .moreBtn a:hover {
+    color: #eba56a;
+}
+
+.regure {
+    position: relative;
+    display: flex;
+    /* ulのwidth */
+    width: 40rem; 
+    margin: 3rem auto 0;
+}
+
+.regure button {
+    display: none;
+}
+
+#prev {
+    display: none;
+}
+
+#slidelist {
+    display: flex;
+    justify-content: center;
+}
+
+.regure ul li {
+    position: relative;
+    width: 10rem;
+    height: 8rem;
+    overflow: hidden;
+}
+
+.regure li img {
+    background-color: #cdc1cb;
+    height: 8rem;
+    width: 8rem;
+    /* margin: 0 0.5rem 0 0.5rem; */
+}
+
+.regure .push {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    top: 0;
+    /* left: 0.5rem; */
+    /* right: 0.5rem; */
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 1s;
+}
+
+.regure .push .caption {
+    font-size: 0.7rem;
+    text-align: center;
+    color: #eeeced;
+    font-weight: bold;
+}
+
+.regure li .push:hover {
+    opacity: 1;
+    padding-top: 3rem;
+}
+
+/*タブレット・スマホ設定*/
+@media screen and (max-width: 769px){
+    
+    .worksFav .titleBox .moreBtn {
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    .regure {
+        width: 23rem;
+    }
+
+    .regure button {
+        display: block!important;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    .regure button .fas {
+        color: #5f4b3e;
+        font-size: 1.5rem;
+    }
+
+    .slidebox {
+        /* border: 2px solid red; */
+        overflow: hidden;
+    }
+    
+    #slidelist {
+        width: 40rem;
+    }
+
+}
+
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+■3．pick up
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+.topPickup {
+    display: flex;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+.topPickup section {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.topPickup section h2{
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.topPickup section ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.topPickup section ul li a div {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.topPickup section ul li a div img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.7s;
+
+}
+
+.topPickup section ul li a div img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/*タブレット・スマホ設定*/
+@media screen and (max-width: 769px){
+    .topPickup {
+        display: block;
+        padding-bottom: 3rem;
+    }
+
+    .topAbout {
+        margin-bottom: 5rem;
+    }
+
+    .topPickup .section ul {
+        justify-content: space-evenly;
+    }
+}

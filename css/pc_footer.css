@@ -1,0 +1,71 @@
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+/* salonName */
+.salonName {
+    width: 35%;
+    float: left;
+}
+
+/* salonDetail */
+.salonDetail {
+    width: 65%;
+    float: right;
+}
+
+.footerInfo dt {
+    float: left;
+    background-color: #5f4b3e;
+    border-radius: 45%;
+    color: #eeeced;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.footerInfo dd {
+    float: left;
+    padding-left: 1.5rem;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 853px) {
+    .footerInfo {
+        padding: 1rem 0 1rem 0;
+    }
+
+    .footerInfo dt {
+        display: block;
+        width: 100%;
+        float: none;
+        position: absolute;
+        top: -1rem;
+        text-align: center;
+        padding: 0;
+        background: none;
+        border: none;
+    }
+
+    .footerInfo dt span {
+        display: inline-block;
+        background-color: #5f4b3e;
+        border-radius: 25%;
+        color: #eeeced;
+        padding: 0.5rem 1.5rem;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+    }
+
+    .footer_tel {
+        margin-top: 1rem;
+    }
+
+   .footer_contact {
+        margin-top: 1rem;
+        margin-left: 3rem;
+    }
+
+}

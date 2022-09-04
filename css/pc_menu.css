@@ -1,0 +1,179 @@
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+★　CSS　PCグローバルメニューの設定　★
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+グローバルナビ
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+#hamburger,
+#mobile_menu {
+    display: none!important;
+}
+
+.navInner {
+    width: 100%;
+}
+
+.pc_menu {
+    width: 100%;
+    height: 3.5rem;
+    position: sticky;
+    background-color: #eeeced;
+    top: 0;
+    z-index: 100;
+}
+
+.dropmenu {
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 5px 0;
+}
+
+.dropmenu li {
+    position: relative;
+    display: inline-block;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.dropmenu li a {
+    display: block;
+    position: relative;
+    transition: 0.3s;
+    height: 3.5rem;
+    margin: 0;
+    line-height: 1;
+}
+
+.dropmenu li a.marked{
+    color: #eba56a;
+}
+
+/* ーーーーーメニュー幅の調整ーーーーー */
+.dropmenu li.top { min-width:4rem;}
+.dropmenu li.about { min-width:12rem;}
+.dropmenu li.design { min-width:8rem;}
+.dropmenu li.menu { min-width:8rem;}
+.dropmenu li.access { min-width:8rem;}
+.dropmenu li.sns { min-width:4rem; }
+
+/* ーーーーードロップダウンメニュー用矢印ーーーーー */
+.dropmenu li.arrowBtm a:after {
+    position: absolute;
+    top: 1rem;
+    content: '';
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    border-right: 1px solid #5f4b3e;
+    border-bottom: 1px solid #5f4b3e;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+/* ーーーーードロップダウンメニュー矢印位置調整ーーーーー */
+.dropmenu li.about a:after { right: 1rem;}
+.dropmenu li.menu a:after { right: 1rem}
+
+.dropmenu li.arrowBtm li a:after {
+    display: none;
+}
+
+/* ーーーーー英語日本語切り替えーーーーー */
+.dropmenu li a .en {
+    opacity: 1;
+    font-weight: 600;
+    padding: 1rem 0 0.5rem;
+    display: block;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.dropmenu li a:hover .en {
+    opacity: 0;
+}
+
+.dropmenu li a .ja {
+    opacity: 0;
+    padding: 1rem 0 0.5rem;
+    display: block;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.dropmenu li a:hover .ja {
+    opacity: 1;
+}
+
+/* ーーーーーメニュー下線ーーーーー */
+.dropmenu li a span:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    background: #5f4b3e;
+    transform: scale(0,2);
+    transition: 1.0s;
+}
+
+.dropmenu li a span:hover::after {
+    transform: scale(1,2);
+}
+
+/* ーーーーードロップダウン用メニューーーーーー */
+.dropmenu li ul {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 0;
+}
+
+.dropmenu li ul li a {
+    border-top: 1px solid #eeeced;
+    background: rgba(238, 236, 237, 0.9);
+    height: 3rem;
+    line-height: 1.3rem;
+}
+
+.dropmenu li ul li {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    height: 0;
+    transition: 0.3s;
+}
+
+.dropmenu li:hover ul li {
+    overflow: visible;
+    height: 3rem;
+}
+
+.dropmrnu li:hover ul {
+    height: auto;
+    overflow: visible;
+}
+
+
+
+
+
+
+
+
+
+
